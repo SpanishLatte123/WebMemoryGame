@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Dabeh</title>
+	<script src="../JS/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="icon" href="../PICS/brain.png">
+</head>
+
+<body onload="stack()">
+	<div class="container">
+		<div class="dispbar">
+		<div  name="Themes" style="opacity: 1;"  onclick="showdivz('themez','hideb')">Options</div><div class="title"><p>Memory Dabeh</p><img src="../PICS/brain.png" style="height:8.13vh;margin-top:1.626vh;margin-left:.078vw;"></div>
+			<div class="score">
+				<p>Score</p><p id='score'>0</p>
+			</div>
+			<div class="time">
+			<p>Time</p>
+			<p id='display'>0:00</p>
+			</div>
+		</div>
+		<div id="play"><h1 onclick="flip(25)" id="pl">Play!</h1></div>
+		<div class="board">
+			<div class="card" onclick="flip(1)" id="car1"><img class="chikucard" id="card1" src="../PICS/logo.png"></div>
+            <div class="card" id="car2"><img class="chikucard"  id="card2" src="../PICS/logo.png"></div>
+            <div class="card" id="car3"><img class="chikucard"  id="card3" src="../PICS/logo.png"></div>
+            <div class="card" id="car4"><img class="chikucard"  id="card4"  src="../PICS/logo.png"></div>
+            <div class="card" id="car5"><img class="chikucard"  id="card5"  src="../PICS/logo.png"></div>
+            <div class="card" id="car6"><img class="chikucard"  id="card6"  src="../PICS/logo.png"></div>
+            <div class="card" id="car7"><img class="chikucard"  id="card7" src="../PICS/logo.png"></div>
+            <div class="card" id="car8"><img class="chikucard"  id="card8"  src="../PICS/logo.png"></div>
+            <div class="card" id="car9"><img class="chikucard"  id="card9"  src="../PICS/logo.png"></div>
+            <div class="card" id="car10"><img class="chikucard"  id="card10" src="../PICS/logo.png"></div>
+            <div class="card" id="car11"><img class="chikucard"  id="card11" src="../PICS/logo.png"></div>
+            <div class="card" id="car12"><img class="chikucard"  id="card12" src="../PICS/logo.png"></div>
+            <div class="card" id="car13"><img class="chikucard"  id="card13" src="../PICS/logo.png"></div>
+						<div class="card" id="car14"><img class="chikucard"  id="card14"  src="../PICS/logo.png"></div>
+						<div class="card" id="car15"><img class="chikucard"  id="card15"  src="../PICS/logo.png"></div>
+            <div class="card" id="car16"><img class="chikucard"  id="card16"  src="../PICS/logo.png"></div>
+            <div class="card" id="car17"><img class="chikucard"  id="card17" src="../PICS/logo.png"></div>
+            <div class="card" id="car18"><img class="chikucard"  id="card18"  src="../PICS/logo.png"></div>
+            <div class="card" id="car19"><img class="chikucard"  id="card19"  src="../PICS/logo.png"></div>
+            <div class="card" id="car20"><img class="chikucard"  id="card20" src="../PICS/logo.png"></div>
+            <div class="card" id="car21"><img class="chikucard"  id="card21" src="../PICS/logo.png"></div>
+            <div class="card" id="car22"><img class="chikucard"  id="card22" src="../PICS/logo.png"></div>
+            <div class="card" id="car23"><img class="chikucard"  id="card23" src="../PICS/logo.png"></div>
+            <div class="card" id="car24"><img class="chikucard"  id="card24"  src="../PICS/logo.png"></div>
+		</div>
+		<div class="newgame" onclick="showdivz('hide','hideb')">
+			<img src="../PICS/newgame.png">
+			<p>New Game</p>
+		</div>
+
+		<div class="hint">
+			<img src="../PICS/hint.png">
+			<p>Rules</p>
+		</div>
+	</div>
+	<div id="hide">
+		<img src="../PICS/Warning.png">
+		<p>Start New Game<p>
+		<pre>You have chosen to start a new game, all of your progress
+will be lost. Would you like to play a New Game?</pre>
+
+	<div class="no" onclick="stack()"><p>Yes</p></div>
+	<div class="yes" onclick="backz('hide','hideb')"><p>No</p></div>
+	</div>
+	</div>
+	<div id="hideb">
+	</div>
+	<div class="win">
+		<h1>Congratulations</h1>
+		<p>Time</p>
+		<p>Board Score</p>
+		<p>Total Score</p>
+	</div>
+	<div class="titled"><img src="../PICS/brain.png"></div>
+</body>
+
+</html>

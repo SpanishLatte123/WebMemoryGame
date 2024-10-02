@@ -1,0 +1,270 @@
+body{
+	margin:0 auto;
+	overflow:hidden;
+}
+.container{
+	float:left;
+	height: 100vh;
+	width:100vw;
+	background: #466368;
+ background: radial-gradient(#648880, #293f50);
+  background-size:100%;
+	position:absolute;
+}
+.dispbar{
+	float: left;
+	width:100%;
+	height:11.75vh;
+	background:rgba(19, 41, 61,.5);
+	transition: all .5s ease-out;
+}
+.board{
+	float:left;
+	width: 80%;
+	margin:2.34vw 10%;
+  transition:all 4s ease-out;
+}
+.card{
+	width:8.90625vw;
+	height:24.878vh;
+	float:left;
+	transition: all .5s ease-out;
+	opacity: 0;
+	cursor:pointer;
+    position:absolute;
+		z-index: 4;
+}
+.card img{
+	width:8.90625vw;
+	height:24.878vh;
+}
+.dispbar p{
+	float:left;
+	font-size:3.73vh;
+	color:white;
+	font-family: tahoma;
+}
+#display{
+    margin-left:1.796875vw;
+}
+.time{
+	margin-left:70%;
+	position: absolute;
+	margin-top:-0.626vh;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+.score{
+	margin-left:49%;
+	position: absolute;
+	margin-top:-0.626vh;
+	opacity: 0;
+	transition: all 1s ease-out;
+}
+#score{
+	margin-left:1.796875vw;
+}
+.title{
+	margin-top:-0.138vh;
+	margin-left:40%;
+	position: absolute;
+	transition: all 1s ease-out;
+}
+.title p{
+	font-family: kristen itc;
+}
+.newgame{
+	float:left;
+	position: absolute;
+	color:white;
+	font-family: tahoma;
+	text-align: center;
+	border:solid white .162vh;
+	padding:.813vh;
+	background:rgba(0,0,0,.5);
+	margin-left:89%;
+	margin-top:82.926vh;
+	height:8.13vh;
+	width:7.968vw;
+	cursor:pointer;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	visibility: hidden;
+}
+.newgame p{
+	margin-top:.3252vh;
+	font-size: 3.089vh;
+}
+.newgame img{
+	margin-top: .813vh;
+	height: 3.25vh;
+
+}
+.newgame:hover{
+	background:rgba(66,98,931,.8);
+}
+
+.hint{
+	float:left;
+	position: absolute;
+	color:white;
+	font-family: tahoma;
+	text-align: center;
+	border:solid white .162vh;
+	padding:.813vh;
+	background:rgba(0,0,0,.5);
+	margin-left:2%;
+	margin-top:82.927vh;
+	height:8.13vh;
+	cursor:pointer;
+	width:5.468vw;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s ease-in-out;
+	visibility: hidden;
+}
+.hint p{
+	margin-top:.3252vh;
+	font-size: 3.039vh;
+}
+.hint img{
+	margin-top: .813vh;
+	height: 1.874vw;
+}
+.hint:hover{
+	background:rgba(66,98,931,.8);
+}
+
+#hide{
+	width:60%;
+	height:48.78vh;
+	float:left;
+	position: absolute;
+	background:white;
+	margin-left:20%;
+	margin-top:43.902vh;
+	z-index: 5;
+	visibility: hidden;
+    opacity:0;
+    transition:.4s all ease-out;
+}
+#hideb{
+	width: 100%;
+	height: 100vh;
+	background:rgba(0,0,0,.8);
+	z-index:4;
+	position: absolute;
+	visibility: hidden;
+}
+#hide img{
+	margin:4.878vh;
+	float:left;
+	width:12.968vw;
+}
+#hide p{
+	font-family: Lucida;
+	font-size: 6.5vh;
+	margin-top: 3.25vh;
+}
+#hide pre{
+	font-family:tahoma;
+	margin-top: -3.25vh;
+	font-size:3.25vh;
+}
+.no{
+	background:rgb(17,55,104);
+	color:white;
+	width: 7.8125vw;
+	height: 11.382vh;
+	margin-left:39.844vw;
+	float:left;
+	margin-top: 8.455vh;
+	position: absolute;
+	cursor:pointer;
+}
+.no p{
+	position: absolute;
+	margin-top: -.325vh;
+	text-align: center;
+	margin-left:1.172vw;
+}
+
+.yes{
+	background:rgb(204,204,204);
+	color:black;
+	width: 7.8125vw;
+	height: 11.382vh;
+	margin-left:48.44vw;
+	margin-top:-8.1vh;
+	float: left;
+	cursor: pointer;
+}
+.yes p{
+	position: absolute;
+	margin-top: -.325vh;
+	text-align: center;
+	margin-left:1.5625vh;
+}
+.yes:hover{
+	border:solid 1px black;
+}
+
+.no:hover{
+	border:solid 1px black;
+}
+div[name=Themes]{
+		background-color: rgba(255, 255, 255, 0.1);
+    border: 1px groove rgba(0, 0, 0, 0.5);
+    border-radius: 0.5vh;
+    margin: 2.626vh .781vw;
+    float: left;
+    height: 5vh;
+    width: 9vw;
+    font-size:3.8vh;
+    text-align: center;
+    cursor: pointer;
+		z-index:2;
+    transition: all 0.5s ease-in-out;
+		color:white;
+		padding-top:.813vh;
+}
+#play{
+	position: fixed;
+	margin-top:38.52vh;
+	width: 100%;
+	transition: all .5s ease-in-out;
+	text-align: center;
+	z-index: 2;
+}
+#pl{
+	transition: all .3s ease-in-out;
+	color:white;
+	font-size: 4.106vw;
+	font-family:  kristen itc;
+}
+#pl:hover{
+	font-size:4.4vw;
+	cursor: pointer;
+	opacity: .9;
+}
+.win{
+	height: 60vh;
+	width: 60vw;
+	text-align: center;
+	background:rgba(19, 41, 61,.7);
+	position: absolute;
+	margin:20vh 20vw;
+	visibility: hidden;
+}
+.win h1{
+	font-family: kristen itc;
+	color:white;
+}
+.titled img{
+	position: absolute;
+	height: 40vh;
+	opacity: .2;
+	z-index: 1;
+	margin-top: 30vh;
+	margin-left: 40vw;
+}
